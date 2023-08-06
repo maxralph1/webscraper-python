@@ -4,7 +4,7 @@ import sys
 from bs4 import BeautifulSoup
 
 tz = datetime.timezone.utc
-ft = "%Y-%m-%dT%H_%M_%S%z"
+ft = "%Y-%m-%dT%H_%M_%S"
 timestamp = datetime.datetime.now(tz=tz).strftime(ft)
 file_name = 'output_' + timestamp + '.txt'
 
