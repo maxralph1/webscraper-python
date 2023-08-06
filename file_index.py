@@ -15,7 +15,7 @@ soup = BeautifulSoup(html_text, 'lxml')
 articles = soup.find_all('div', class_ = 'cgSlide')
 
 
-for index, article in enumerate(articles):
+for article in articles:
     article_heading = article.find('h2').text
     article_paragraph = article.find_all('p')
 
