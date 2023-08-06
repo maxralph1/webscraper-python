@@ -14,3 +14,5 @@ for article in articles:
 
     for article in article_paragraph:
         print(article.text)
+
+    print('\n')
